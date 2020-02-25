@@ -1,0 +1,10 @@
+name: ChallengeSystem
+version: 0.1
+author: CRAFTagain
+main: de.craftagain.challengesystem.ChallengeSystem
+api-version: 1.13
+
+commands:
+  challenge:
+    usage: /challenge [settings]/[start]/[stop]
+    description: Grundlegende Befehle der Challenge
