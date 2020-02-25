@@ -15,7 +15,7 @@ public class CMD_challenge implements CommandExecutor {
 
             if(cmd.getName().equalsIgnoreCase("challenge")){
                 if(args.length == 1){
-                    if(args[0].equalsIgnoreCase("settings")){
+                    if(args[0].equalsIgnoreCase("settings") || args[0].equalsIgnoreCase("s")){
                         player.openInventory(Inventories.MENU);
 
                     }
