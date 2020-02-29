@@ -1,26 +1,20 @@
 package de.craftagain.challengesystem.event;
 
-import de.craftagain.challengesystem.inventory.Inventories;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventException;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public class MenuClickListener implements Listener {
+public class GoalClickListener implements Listener {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
         Player player = (Player)event.getWhoClicked();
 
-        //Settings
         try {
-            if (event.getView().getTitle().equals("§8Einstellungen")) {
+            if (event.getView().getTitle().equals("§8Ziele")) {
                 event.setCancelled(true);
-                //Goals
-                if (event.getCurrentItem().getItemMeta().getDisplayName().equals("§aZiele")) {
-                    player.openInventory(Inventories.GOALS);
-                }
             }
         }catch(NullPointerException e){
 

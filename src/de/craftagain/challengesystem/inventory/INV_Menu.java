@@ -16,7 +16,7 @@ public class INV_Menu implements IInventory {
 
     public void registerInventory() {
 
-
+        //Design
         for(int i = 0; i < 9; i++){
             inv.setItem(i, edge);
         }
