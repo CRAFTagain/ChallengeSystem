@@ -15,7 +15,7 @@ public class ItemBuilder {
         meta.setDisplayName(name);
 
         if(isEnchanted){
-            meta.addEnchant(Enchantment.DURABILITY, 0 , false);
+            meta.addEnchant(Enchantment.DURABILITY, 0 , true);
             meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         }
 

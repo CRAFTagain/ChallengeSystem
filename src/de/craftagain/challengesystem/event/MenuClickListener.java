@@ -21,6 +21,10 @@ public class MenuClickListener implements Listener {
                 if (event.getCurrentItem().getItemMeta().getDisplayName().equals("§aZiele")) {
                     player.openInventory(Inventories.GOALS);
                 }
+                //Timer
+                if (event.getCurrentItem().getItemMeta().getDisplayName().equals("§aTimer")) {
+                    player.openInventory(Inventories.TIMER);
+                }
             }
         }catch(NullPointerException e){
 

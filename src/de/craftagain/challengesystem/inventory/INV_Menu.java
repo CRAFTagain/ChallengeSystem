@@ -12,6 +12,7 @@ public class INV_Menu implements IInventory {
 
     //Items
     static ItemStack goals = ItemBuilder.createItem(Material.NETHER_STAR, "§aZiele", false);
+    static ItemStack timer = ItemBuilder.createItem(Material.CLOCK, "§aTimer", false);
     static ItemStack edge = ItemBuilder.createItem(Material.BLACK_STAINED_GLASS_PANE, " ", false);
 
     public void registerInventory() {
@@ -30,6 +31,7 @@ public class INV_Menu implements IInventory {
         }
 
         inv.setItem(19, goals);
+        inv.setItem(20, timer);
 
     }
 }

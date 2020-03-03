@@ -17,4 +17,13 @@ public class Config {
         config.save(file);
     }
 
+    public static void setGoal(String goal) throws IOException {
+        config.set("Challenge.goal", goal);
+        save();
+    }
+
+    public static String getGoal(){
+        return config.getString("Challenge.goal");
+    }
+
 }
