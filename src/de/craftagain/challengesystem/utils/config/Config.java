@@ -26,4 +26,16 @@ public class Config {
         return config.getString("Challenge.goal");
     }
 
+    public static void setTimer(int hours, int minutes, int seconds) throws IOException {
+        config.set("Timer.time.hours", hours);
+        config.set("Timer.time.minutes", minutes);
+        config.set("Timer.time.seconds", seconds);
+
+        save();
+    }
+    public static void setTimerType(String timerType) throws IOException {
+        config.set("Timer.type", timerType);
+        save();
+    }
+
 }

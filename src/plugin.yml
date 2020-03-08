@@ -5,6 +5,11 @@ main: de.craftagain.challengesystem.ChallengeSystem
 api-version: 1.13
 
 commands:
-  challenge:
-    usage: /challenge [settings]/[start]/[stop]
-    description: Grundlegende Befehle der Challenge
+  settings:
+    usage: /settings
+    description: Einstellungen der Challenge
+    aliases: s
+
+  timer:
+    usage: /timer [resume]/[stop]
+    description: Fortsetzen/Stoppen des Timers
