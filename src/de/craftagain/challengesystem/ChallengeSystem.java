@@ -3,6 +3,7 @@ package de.craftagain.challengesystem;
 import de.craftagain.challengesystem.command.CMD_settings;
 import de.craftagain.challengesystem.command.CMD_timer;
 import de.craftagain.challengesystem.event.*;
+import de.craftagain.challengesystem.goal.DimensionEnterListener;
 import de.craftagain.challengesystem.goal.EnderDragonKillListener;
 import de.craftagain.challengesystem.info.Data;
 import de.craftagain.challengesystem.inventory.*;
@@ -52,6 +53,7 @@ public class ChallengeSystem extends JavaPlugin {
 
         //Goals
         pm.registerEvents(new EnderDragonKillListener(), this);
+        pm.registerEvents(new DimensionEnterListener(), this);
 
 
     }
