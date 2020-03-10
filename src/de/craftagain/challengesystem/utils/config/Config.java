@@ -37,5 +37,8 @@ public class Config {
         config.set("Timer.type", timerType);
         save();
     }
+    public static String getTimerType(){
+        return config.getString("Timer.type");
+    }
 
 }

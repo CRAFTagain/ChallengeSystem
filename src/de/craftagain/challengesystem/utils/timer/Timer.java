@@ -11,9 +11,9 @@ public class Timer {
 
     private ChallengeSystem plugin = ChallengeSystem.getPlugin(ChallengeSystem.class);
 
-    public int hours;
-    public int minutes;
-    public int seconds;
+    public int hours = Config.config.getInt("Timer.time.hours");
+    public int minutes = Config.config.getInt("Timer.time.minutes");
+    public int seconds = Config.config.getInt("Timer.time.seconds");
 
     public void countDown(){
         Bukkit.getScheduler().cancelTasks(plugin);
@@ -47,10 +47,6 @@ public class Timer {
     }
 
     public void addTime(int h, int m, int s) throws IOException {
-
-        hours = Config.config.getInt("Timer.time.hours");
-        minutes = Config.config.getInt("Timer.time.minutes");
-        seconds = Config.config.getInt("Timer.time.seconds");
 
         seconds += s;
 
